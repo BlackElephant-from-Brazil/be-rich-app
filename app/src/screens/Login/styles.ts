@@ -10,4 +10,8 @@ export const styles = StyleSheet.create({
 	text: {
 		color: '#FFFFFF',
 	},
+	image: {
+		marginBottom: 40,
+		marginTop: 40,
+	},
 })
