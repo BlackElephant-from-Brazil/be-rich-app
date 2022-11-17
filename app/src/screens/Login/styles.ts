@@ -7,11 +7,7 @@ export const styles = StyleSheet.create({
 		alignItems: 'center',
 		justifyContent: 'center',
 	},
-	image: {
-		marginBottom: 40,
-		marginTop: 40,
-	},
-	titleText: {
-		textAlign: 'center',
+	text: {
+		color: '#FFFFFF',
 	},
 })
