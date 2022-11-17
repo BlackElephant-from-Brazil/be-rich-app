@@ -1,12 +1,37 @@
-import { StatusBar } from 'expo-status-bar'
-import { Text, View } from 'react-native'
+import { View, Image } from 'react-native'
+import { AppTitle } from '@components/AppTitle'
+import { TitleText } from '@components/TitleText'
 import { styles } from './styles'
+import { useEffect, useState } from 'react'
 
-export function Splash() {
+// TODO: TO CHANGE ANY TYPE TO CORRECTLY PROP TYPE
+export function Splash(props: any) {
+	const [loginScreenLoaded, setLoginScreenLoaded] = useState(false)
+
+	useEffect(() => {
+		setTimeout(() => {
+			setLoginScreenLoaded(true)
+		}, 3000)
+	}, [])
+
+	useEffect(() => {
+		if (loginScreenLoaded) {
+			props.navigation.replace('login')
+		}
+	}, [loginScreenLoaded, props.navigation, props])
+
 	return (
 		<View style={styles.container}>
-			<Text>Ola do seu amigo beRich!</Text>
-			<StatusBar style="auto" />
+			<AppTitle />
+			{/* eslint-disable-next-line jsx-a11y/alt-text */}
+			<Image
+				source={require('./../../assets/money-bag.png')}
+				style={styles.image}
+			/>
+			<TitleText
+				text="Seu app de organização financeira"
+				customStyles={styles.titleText}
+			/>
 		</View>
 	)
 }
