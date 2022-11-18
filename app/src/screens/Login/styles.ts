@@ -7,11 +7,11 @@ export const styles = StyleSheet.create({
 		alignItems: 'center',
 		justifyContent: 'center',
 	},
-	text: {
-		color: '#FFFFFF',
-	},
 	image: {
 		marginBottom: 40,
 		marginTop: 40,
+	},
+	underscore: {
+		textDecorationLine: 'underline',
 	},
 })

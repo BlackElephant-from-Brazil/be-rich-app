@@ -1,9 +1,9 @@
 import { StyleSheet } from 'react-native'
 
 export const styles = StyleSheet.create({
-	text: {
+	title: {
 		color: '#FFFFFF',
-		fontSize: 32,
-		fontFamily: 'Trispace_400Regular',
+		fontSize: 12,
+		fontFamily: 'Comfortaa_500Medium',
 	},
 })
