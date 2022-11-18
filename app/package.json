@@ -25,6 +25,7 @@
     ]
   },
   "dependencies": {
+    "@expo-google-fonts/comfortaa": "^0.2.2",
     "@expo-google-fonts/fugaz-one": "^0.2.2",
     "@expo-google-fonts/trispace": "^0.2.2",
     "@react-navigation/native": "^6.0.13",

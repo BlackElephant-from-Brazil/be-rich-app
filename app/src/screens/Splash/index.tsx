@@ -24,10 +24,7 @@ export function Splash(props: any) {
 		<View style={styles.container}>
 			<AppTitle />
 			{/* eslint-disable-next-line jsx-a11y/alt-text */}
-			<Image
-				source={require('./../../assets/money-bag.png')}
-				style={styles.image}
-			/>
+			<Image source={require('@assets/money-bag.png')} style={styles.image} />
 			<TitleText
 				text="Seu app de organização financeira"
 				customStyles={styles.titleText}
